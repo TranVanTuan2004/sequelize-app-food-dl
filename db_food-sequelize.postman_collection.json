@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "0a5d3c42-3135-421a-b81d-66e5e2e8ff24",
+		"name": "db_food-sequelize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21242947"
+	},
+	"item": [
+		{
+			"name": "like-restaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"1\",\r\n    \"res_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/restaurant/like-restaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"restaurant",
+						"like-restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "layDanhSachLikeTheoNhaHang",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/restaurant/layDanhSachLikeTheoNhaHang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"restaurant",
+						"layDanhSachLikeTheoNhaHang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "layDanhSachLikeTheoNguoiDung",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/layDanhSachLikeTheoNguoiDung/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"layDanhSachLikeTheoNguoiDung",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "danhGiaNhaHang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"resId\": 2,\r\n    \"danhGia\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/restaurant/danhGiaNhaHang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"restaurant",
+						"danhGiaNhaHang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "layDanhSachDanhGiaTheoNhaHang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/restaurant/layDanhSachDanhGiaTheoNhaHang?idNhaHang=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"restaurant",
+						"layDanhSachDanhGiaTheoNhaHang"
+					],
+					"query": [
+						{
+							"key": "idNhaHang",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "layDanhSachDanhGiaTheoNguoiDung",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/layDanhSachDanhGiaTheoNguoiDung?idUser=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"layDanhSachDanhGiaTheoNguoiDung"
+					],
+					"query": [
+						{
+							"key": "idUser",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nguoiDungDatMon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"12\",\r\n    \"foodId\": \"6\",\r\n    \"amount\": \"2\",\r\n    \"code\": \"\",\r\n    \"arrSubId\": \"[7,8]\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/nguoiDungDatMon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"nguoiDungDatMon"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
